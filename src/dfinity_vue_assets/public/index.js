@@ -1,5 +1,7 @@
-import dfinity_vue from 'ic:canisters/dfinity_vue';
+import Vue from 'vue'
+import App from './App.vue'
 
-dfinity_vue.greet(window.prompt("Enter your name:")).then(greeting => {
-  window.alert(greeting);
-});
+new Vue({
+  render: (h) => h(App)
+}).$mount('#app')
+
