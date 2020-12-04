@@ -2,6 +2,9 @@
 
 Integration of [Vue.js][vue] and [Vuetify][vuetify] with the default [DFINITY SDK][sdk] [bootstrap webpack project][project].
 
+- If you want a boilerplate with **only Vue.js**, checkout the `vue` branch.
+- If you want a boilerplate with **Vue.js and Vuetify**, checkout the `vuetify` branch.
+
 See the following documentation available online:
 
 - [Quick Start](https://sdk.dfinity.org/docs/quickstart/quickstart.html)
