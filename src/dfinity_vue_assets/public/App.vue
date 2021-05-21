@@ -1,7 +1,7 @@
 <template>
-  <v-app>
+  <div id="app">
     <div>{{ internetComputerGreeting || 'Loading message from Internet Computer...' }}</div>
-  </v-app>
+  </div>
 </template>
 
 <script>
