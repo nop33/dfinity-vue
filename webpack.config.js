@@ -40,7 +40,7 @@ function generateWebpackConfigForCanister(name, info, env) {
     entry: {
       index: path.join(__dirname, info.frontend.entrypoint),
     },
-    devtool: env.development ? "source-map" : "",
+    devtool: env.development ? "inline-source-map" : false,
     optimization: {
       minimize: true,
       minimizer: [new TerserPlugin()],
