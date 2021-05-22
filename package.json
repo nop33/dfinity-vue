@@ -7,12 +7,19 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "@dfinity/agent": "0.6.14",
+    "@dfinity/agent": "0.8.8",
+    "assert": "2.0.0",
+    "buffer": "6.0.3",
+    "events": "3.3.0",
     "terser-webpack-plugin": "2.2.2",
+    "html-webpack-plugin": "5.3.1",
+    "process": "0.11.10",
+    "stream-browserify": "3.0.0",
+    "util": "0.12.3",
     "vue-loader": "^15.9.5",
     "vue-template-compiler": "^2.6.12",
-    "webpack": "4.41.3",
-    "webpack-cli": "3.3.10"
+    "webpack": "5.24.4",
+    "webpack-cli": "4.5.0"
   },
   "dependencies": {
     "vue": "^2.6.12"
