@@ -9,7 +9,7 @@
         "dfinity_vue"
       ],
       "frontend": {
-        "entrypoint": "src/dfinity_vue_assets/public/index.js"
+        "entrypoint": "src/dfinity_vue_assets/src/index.html"
       },
       "source": [
         "src/dfinity_vue_assets/assets",
