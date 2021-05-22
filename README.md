@@ -1,5 +1,9 @@
 # DFINITY-Vue
 
+<p align="center">
+  <img src="logos.png">
+</p>
+
 Integration of [Vue.js][vue] with the default [DFINITY SDK][sdk] [bootstrap webpack project][project]. There is also an integration with [Vuetify][] in its own branch: [`vuetify`][vuetify-branch].
 
 ## Docs and resources
