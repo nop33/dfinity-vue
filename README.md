@@ -39,7 +39,7 @@ Restart the DFX network with:
 dfx start --clean
 ```
 
-The --clean option removes checkpoints and stale state information from your project’s cache so that you can restart the Internet Computer replica and web server processes in a clean state.
+The `--clean` option removes checkpoints and stale state information from your project’s cache so that you can restart the Internet Computer replica and web server processes in a clean state.
 
 ### How to upgrade the SDK
 
