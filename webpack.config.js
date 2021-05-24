@@ -31,19 +31,19 @@ const aliases = Object.entries(dfxJson.canisters).reduce(
 /**
  * Generate a webpack configuration for a canister.
  */
-function generateWebpackConfigForCanister(name, info) {
+function generateWebpackConfigForCanister(name, info, env) {
   if (typeof info.frontend !== "object") {
     return;
   }
 
   return {
-    mode: "production",
+    mode: env.development ? "development" : "production",
     entry: {
       // The frontend.entrypoint points to the HTML file for this build, so we need
       // to replace the extension to `.js`.
       index: path.join(__dirname, info.frontend.entrypoint).replace(/\.html$/, ".js"),
     },
-    devtool: "source-map",
+    devtool: env.development ? "inline-source-map" : false,
     optimization: {
       minimize: true,
       minimizer: [new TerserPlugin()],
@@ -65,7 +65,6 @@ function generateWebpackConfigForCanister(name, info) {
     },
     module: {
       rules: [
-        { test: /\.css$/, use: ["style-loader", "css-loader"] },
         { test: /\.vue$/, loader: "vue-loader" }
       ]
     },
@@ -86,10 +85,16 @@ function generateWebpackConfigForCanister(name, info) {
 
 // If you have additional webpack configurations you want to build
 //  as part of this configuration, add them to the section below.
-module.exports = [
-  ...Object.entries(dfxJson.canisters)
-    .map(([name, info]) => {
-      return generateWebpackConfigForCanister(name, info);
-    })
-    .filter((x) => !!x),
-];
+module.exports = env => {
+  if (!env) {
+    env = {}
+  }
+
+  return [
+    ...Object.entries(dfxJson.canisters)
+      .map(([name, info]) => {
+        return generateWebpackConfigForCanister(name, info, env);
+      })
+      .filter((x) => !!x),
+  ];
+}
