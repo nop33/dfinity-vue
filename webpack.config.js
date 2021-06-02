@@ -1,7 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const TerserPlugin = require("terser-webpack-plugin");
 const { VueLoaderPlugin } = require("vue-loader");
 const dfxJson = require("./dfx.json");
 
@@ -46,7 +45,6 @@ function generateWebpackConfigForCanister(name, info, env) {
     devtool: env.development ? "inline-source-map" : false,
     optimization: {
       minimize: true,
-      minimizer: [new TerserPlugin()],
     },
     resolve: {
       alias: aliases,
