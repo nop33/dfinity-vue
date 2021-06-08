@@ -1,5 +1,7 @@
 # DFINITY-Vue
 
+[![Mentioned in Awesome DFINITY](https://awesome.re/mentioned-badge.svg)](https://github.com/dfinity/awesome-dfinity)
+
 <p align="center">
   <img src="logos.png">
 </p>
@@ -9,6 +11,7 @@ Integration of [Vue.js][vue] with the default [DFINITY SDK][sdk] [bootstrap webp
 ## Docs and resources
 
 I documented the process of integrating both Vue and Vuetify in my respective blog posts:
+
 - [Integrating Vue.js with DFINITY SDK Bootstrap project - Part 1][blog post part 1]
 - [Integrating Vue.js with DFINITY SDK Bootstrap project - Part 2: Adding Vuetify][blog post part 2]
 
