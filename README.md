@@ -1,6 +1,7 @@
 # DFINITY-Vue
 
 [![Mentioned in Awesome DFINITY](https://awesome.re/mentioned-badge.svg)](https://github.com/dfinity/awesome-dfinity)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/organization/repository)
 
 <p align="center">
   <img src="logos.png">
